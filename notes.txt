@@ -1,0 +1,15 @@
+States for:
+- Player score
+- ???
+
+Story:
+- Screen presents two buttons to pick from: Sid Hoffman, or Sid Frenchman
+- Player clicks one of the two buttons (let's say Sid Hoffman is false, and Sid Frenchman is true)
+- A random boolean is generated and cross-referenced with the player's choice
+- This boolean also determines which name will be displayed in the next component
+- One of the props in this component will be whether or not the boolean matches up with the player's choice
+- Depending on that, it'll either say "Sorry, try again" or "you gained a point"
+
+The player's score will be in another component, with an option to reset the score
+
+Possible bonus idea: if Math.random is exactly 0, display "Sid Hoff...frenchman"
