@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 export default function Main(props) {
-  const [scoreMode, setScoreMode] = useState(false);
+  const [resultMode, setResultMode] = useState(false);
 
   const toggleMode = function() {
-    setScoreMode(!scoreMode);
+    setResultMode(!resultMode);
   }
 
   return(<div>
