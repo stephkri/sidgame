@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Result from "./Result";
+import Buttons from "./Buttons";
 
 export default function Main(props) {
   const [resultMode, setResultMode] = useState(false);
@@ -8,6 +10,7 @@ export default function Main(props) {
   }
 
   return(<div>
+    {resultMode ? <Result /> : <Buttons />}
     <button onClick={props.increaseScore}>Increase score</button>
     <button onClick={props.resetScore}>Reset score</button>
     </div>)
