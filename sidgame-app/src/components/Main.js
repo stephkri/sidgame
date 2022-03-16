@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Main(props) {
   return(<div>
     <button onClick={props.increaseScore}>Increase score</button>
