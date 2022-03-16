@@ -12,4 +12,8 @@ Story:
 
 The player's score will be in another component, with an option to reset the score
 
+Visual modes needed by the main component:
+- Two buttons to select from
+- Result and score announcement
+
 Possible bonus idea: if Math.random is exactly 0, display "Sid Hoff...frenchman"
