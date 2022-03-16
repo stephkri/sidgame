@@ -10,7 +10,11 @@ export default function Main(props) {
   };
 
   const generateSid = function() {
-
+    const rand = Math.random();
+    if (Math.round(rand) === 0) {
+      return "Hoffman";
+    }
+    return "Frenchman";
   };
 
   return(<div>
