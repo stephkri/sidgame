@@ -11,6 +11,11 @@ export default function Main(props) {
     setResultMode(!resultMode);
   };
 
+  const togglePositive = function() {
+    props.increaseScore();
+    toggleMode();
+  }
+
   const resetSelect = function() {
     setSelect("");
   }
