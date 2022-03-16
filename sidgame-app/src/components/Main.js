@@ -4,10 +4,16 @@ import Buttons from "./Buttons";
 
 export default function Main(props) {
   const [resultMode, setResultMode] = useState(false);
+  const [select, setSelect] = useState("");
+  const [result, setResult] = useState("");
 
   const toggleMode = function() {
     setResultMode(!resultMode);
   };
+
+  const resetSelect = function() {
+    setSelect("");
+  }
 
   const generateSid = function() {
     const rand = Math.random();
@@ -18,10 +24,18 @@ export default function Main(props) {
   };
 
   return(<div>
-    {resultMode ? <Result /> : <Buttons
+    {resultMode ?
+    <Result
+    toggleMode={toggleMode}
+    result={result}
+    select={select} />
+    :
+    <Buttons
     increaseScore={props.increaseScore}
     decreaseScore={props.decreaseScore}
-    resetScore={props.resetScore} />}
-    <button onClick={toggleMode}>Toggle mode</button>
+    resetScore={props.resetScore}
+    select={select}
+    setSelect={setSelect}
+    toggleMode={toggleMode} />}
     </div>)
 };
