@@ -22,7 +22,9 @@ export default function Main(props) {
     {resultMode ? <Result /> : <Buttons
     increaseScore={props.increaseScore}
     decreaseScore={props.decreaseScore}
-    resetScore={props.resetScore} />}
+    resetScore={props.resetScore}
+    select={select}
+    setSelect={setSelect} />}
     <button onClick={toggleMode}>Toggle mode</button>
     </div>)
 };
