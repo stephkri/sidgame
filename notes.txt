@@ -17,3 +17,11 @@ Visual modes needed by the main component:
 - Result and score announcement
 
 Possible bonus idea: if Math.random is exactly 0, display "Sid Hoff...frenchman"
+
+
+Pseudocode:
+Perhaps have selection and result as states, both initially set to an empty string
+onClick = set selection to either Hoffman or Frenchman, and set result to generateSid()
+Then toggle mode to view result
+If result === selection, then increase score, else either leave it be or decrease it
+Next button in result: reset both selection and result, and toggle mode back to Buttons

@@ -7,7 +7,15 @@ export default function Main(props) {
 
   const toggleMode = function() {
     setResultMode(!resultMode);
-  }
+  };
+
+  const generateSid = function() {
+    const rand = Math.random();
+    if (Math.round(rand) === 0) {
+      return "Hoffman";
+    }
+    return "Frenchman";
+  };
 
   return(<div>
     {resultMode ? <Result /> : <Buttons
