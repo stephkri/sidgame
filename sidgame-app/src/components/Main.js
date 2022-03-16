@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 export default function Main(props) {
+  const [scoreMode, setScoreMode] = useState(false);
+
   return(<div>
     <button onClick={props.increaseScore}>Increase score</button>
     <button onClick={props.resetScore}>Reset score</button>
