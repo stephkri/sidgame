@@ -1,3 +1,7 @@
 export default function Buttons(props) {
-  return(<div><p>Here is the Button component</p></div>)
+  return(<div>
+    <button onClick={props.increaseScore}>Increase score</button>
+    <button onClick={props.decreaseScore}>Decrease score</button>
+    <button onClick={props.resetScore}>Reset score</button>
+  </div>)
 };
