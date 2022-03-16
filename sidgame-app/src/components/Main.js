@@ -7,7 +7,11 @@ export default function Main(props) {
 
   const toggleMode = function() {
     setResultMode(!resultMode);
-  }
+  };
+
+  const generateSid = function() {
+
+  };
 
   return(<div>
     {resultMode ? <Result /> : <Buttons
