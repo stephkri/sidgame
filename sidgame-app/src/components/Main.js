@@ -19,12 +19,12 @@ export default function Main(props) {
   };
 
   return(<div>
-    {resultMode ? <Result /> : <Buttons
+    {resultMode ? <Result toggleMode={toggleMode} /> : <Buttons
     increaseScore={props.increaseScore}
     decreaseScore={props.decreaseScore}
     resetScore={props.resetScore}
     select={select}
-    setSelect={setSelect} />}
-    <button onClick={toggleMode}>Toggle mode</button>
+    setSelect={setSelect}
+    toggleMode={toggleMode} />}
     </div>)
 };
