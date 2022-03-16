@@ -10,6 +10,10 @@ export default function Main(props) {
     setResultMode(!resultMode);
   };
 
+  const resetSelect = function() {
+    setSelect("");
+  }
+
   const generateSid = function() {
     const rand = Math.random();
     if (Math.round(rand) === 0) {
