@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useState } from "react";
 import './App.css';
 import Main from './components/Main';
@@ -8,19 +7,25 @@ function App() {
   const [score, setScore] = useState(0);
 
   const increaseScore = function() {
-    console.log("working");
     setScore(score + 1);
-  }
+  };
+
+  const decreaseScore = function() {
+    setScore(score - 1);
+  };
 
   const resetScore = function() {
     setScore(0);
-  }
+  };
 
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          <Main increaseScore={increaseScore} resetScore={resetScore} />
+          <Main
+          increaseScore={increaseScore}
+          decreaseScore={decreaseScore}
+          resetScore={resetScore} />
         </p>
         <p>
           <Score score={score} />
