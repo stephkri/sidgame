@@ -11,6 +11,7 @@ export default function Main(props) {
 
   return(<div>
     {resultMode ? <Result /> : <Buttons />}
+    <button onClick={toggleMode}>Toggle mode</button>
     <button onClick={props.increaseScore}>Increase score</button>
     <button onClick={props.resetScore}>Reset score</button>
     </div>)
