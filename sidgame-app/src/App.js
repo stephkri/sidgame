@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import { useState } from "react";
 import './App.css';
+import Main from './components/Main';
 import Score from './components/Score';
 
 function App() {
