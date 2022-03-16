@@ -9,21 +9,24 @@ function App() {
 
   const increaseScore = function() {
     setScore(score + 1);
-  }
+  };
 
   const decreaseScore = function() {
     setScore(score - 1);
-  }
+  };
 
   const resetScore = function() {
     setScore(0);
-  }
+  };
 
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          <Main increaseScore={increaseScore} resetScore={resetScore} />
+          <Main
+          increaseScore={increaseScore}
+          decreaseScore={decreaseScore}
+          resetScore={resetScore} />
         </p>
         <p>
           <Score score={score} />
