@@ -5,6 +5,7 @@ import Buttons from "./Buttons";
 export default function Main(props) {
   const [resultMode, setResultMode] = useState(false);
   const [select, setSelect] = useState("");
+  const [result, setResult] = useState("");
 
   const toggleMode = function() {
     setResultMode(!resultMode);
@@ -23,7 +24,13 @@ export default function Main(props) {
   };
 
   return(<div>
-    {resultMode ? <Result toggleMode={toggleMode} /> : <Buttons
+    {resultMode ?
+    <Result
+    toggleMode={toggleMode}
+    result={result}
+    select={select} />
+    :
+    <Buttons
     increaseScore={props.increaseScore}
     decreaseScore={props.decreaseScore}
     resetScore={props.resetScore}
