@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 
 export default function Main(props) {
   const [resultMode, setResultMode] = useState(false);
+  const [select, setSelect] = useState("");
 
   const toggleMode = function() {
     setResultMode(!resultMode);
