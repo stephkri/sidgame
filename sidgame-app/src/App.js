@@ -8,8 +8,11 @@ function App() {
   const [score, setScore] = useState(0);
 
   const increaseScore = function() {
-    console.log("working");
     setScore(score + 1);
+  }
+
+  const decreaseScore = function() {
+    setScore(score - 1);
   }
 
   const resetScore = function() {
