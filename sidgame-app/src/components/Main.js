@@ -15,7 +15,5 @@ export default function Main(props) {
     decreaseScore={props.decreaseScore}
     resetScore={props.resetScore} />}
     <button onClick={toggleMode}>Toggle mode</button>
-    <button onClick={props.increaseScore}>Increase score</button>
-    <button onClick={props.resetScore}>Reset score</button>
     </div>)
 };
