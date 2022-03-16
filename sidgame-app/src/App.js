@@ -12,10 +12,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <Main />
+          <Main setScore={setScore} />
         </p>
         <p>
-          <Score score={score} setScore={setScore} />
+          <Score score={score} />
         </p>
         <a
           className="App-link"
