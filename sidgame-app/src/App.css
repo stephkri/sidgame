@@ -1,13 +1,13 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #dabb83;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-logo {
@@ -34,6 +34,8 @@
   }
 }
 
-.sid-button {
-  border: 1px solid red;
+button {
+  border: 2px solid black;
+  font-size: 1em;
+  margin-top: 10px;
 }
