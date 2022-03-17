@@ -29,13 +29,10 @@ export default function Main(props) {
     {resultMode ?
     <Result
     toggleMode={toggleMode}
-    result={result}
-    resetScore={props.resetScore} />
+    result={result} />
     :
     <Buttons
     increaseScore={props.increaseScore}
-    decreaseScore={props.decreaseScore}
-    resetScore={props.resetScore}
     checkScoreResult={checkScoreResult}
     generateSid={generateSid}
     result={result}
