@@ -5,14 +5,20 @@ import Buttons from "./Buttons";
 export default function Main(props) {
   const [resultMode, setResultMode] = useState(false);
   const [select, setSelect] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState({});
 
   const toggleMode = function() {
     setResultMode(!resultMode);
   };
 
-  const resetSelect = function() {
+  const togglePositive = function() {
+    props.increaseScore();
+    toggleMode();
+  }
+
+  const resetBoth = function() {
     setSelect("");
+    setResult({});
   }
 
   const generateSid = function() {
@@ -22,6 +28,13 @@ export default function Main(props) {
     }
     return "Frenchman";
   };
+
+  const checkScoreResult = function(selected, generated) {
+    return {
+      lastName: generated,
+      addPoint: selected === generated
+    }
+  }
 
   return(<div>
     {resultMode ?
@@ -34,8 +47,12 @@ export default function Main(props) {
     increaseScore={props.increaseScore}
     decreaseScore={props.decreaseScore}
     resetScore={props.resetScore}
+    checkScoreResult={checkScoreResult}
+    generateSid={generateSid}
     select={select}
     setSelect={setSelect}
+    result={result}
+    setResult={setResult}
     toggleMode={toggleMode} />}
     </div>)
 };
