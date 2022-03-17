@@ -16,8 +16,9 @@ export default function Main(props) {
     toggleMode();
   }
 
-  const resetSelect = function() {
+  const resetBoth = function() {
     setSelect("");
+    setResult("");
   }
 
   const generateSid = function() {
