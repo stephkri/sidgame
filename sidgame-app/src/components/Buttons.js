@@ -12,6 +12,12 @@ export default function Buttons(props) {
       }}>Sid Hoffman</button>
     <button onClick={() => {
       props.setSelect("Frenchman");
+      const score = props.checkScoreResult("Frenchman", props.generateSid());
+      props.setResult(score);
+      if (score.addPoint) {
+        props.increaseScore();
+      }
+      console.log(score);
       props.toggleMode()
       }}>Sid Frenchman</button>
     <br />
