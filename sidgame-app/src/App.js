@@ -20,7 +20,6 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
         <p>
           <Main
           increaseScore={increaseScore}
@@ -30,7 +29,6 @@ function App() {
         <p>
           <Score score={score} resetScore={resetScore} />
         </p>
-      </header>
     </div>
   );
 }
