@@ -1,9 +1,9 @@
 export default function Result(props) {
   return (<div>
-    <p>Here is the Result component</p>
-    <p>Your selection: {props.select}</p>
-    <p>The result: {props.result.lastName}</p>
-    {props.result.addPoint ? <p>You gained a point</p> : <p>You did not gain a point</p>}
-    <button onClick={props.toggleMode}>Toggle mode</button>
+    <h1>Sid {props.result.lastName}</h1>
+    {props.result.addPoint ?
+    <p className={"win-point"}>Congratulations! You gained a point.</p> :
+    <p className={"lose-point"}>Sorry! You did not gain a point.</p>}
+    <button onClick={props.toggleMode}>Next round</button>
     </div>)
 };

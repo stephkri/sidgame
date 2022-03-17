@@ -1,3 +1,6 @@
 export default function Score(props) {
-  return(<div>Here is the score: {props.score}</div>);
+  return(<div>
+    <h3>Your score: {props.score}</h3>
+    <button onClick={props.resetScore}>Reset score</button>
+    </div>);
 }

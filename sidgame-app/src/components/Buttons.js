@@ -1,7 +1,7 @@
 export default function Buttons(props) {
   return(<div>
-    <button onClick={() => {
-      props.setSelect("Hoffman");
+    <p>What will I say next?</p>
+    <button className={"sid-button"} onClick={() => {
       const score = props.checkScoreResult("Hoffman", props.generateSid());
       props.setResult(score);
       if (score.addPoint) {
@@ -10,8 +10,8 @@ export default function Buttons(props) {
       console.log(score);
       props.toggleMode();
       }}>Sid Hoffman</button>
-    <button onClick={() => {
-      props.setSelect("Frenchman");
+    <br />
+    <button className={"sid-button"} onClick={() => {
       const score = props.checkScoreResult("Frenchman", props.generateSid());
       props.setResult(score);
       if (score.addPoint) {
@@ -20,11 +20,5 @@ export default function Buttons(props) {
       console.log(score);
       props.toggleMode()
       }}>Sid Frenchman</button>
-    <br />
-    <button onClick={props.increaseScore}>Increase score</button>
-    <button onClick={props.decreaseScore}>Decrease score</button>
-    <button onClick={props.resetScore}>Reset score</button>
-    <br />
-    <button onClick={props.toggleMode}>Toggle mode</button>
   </div>)
 };
