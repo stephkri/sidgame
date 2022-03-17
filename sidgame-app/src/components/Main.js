@@ -41,7 +41,8 @@ export default function Main(props) {
     <Result
     toggleMode={toggleMode}
     result={result}
-    select={select} />
+    select={select}
+    resetScore={props.resetScore} />
     :
     <Buttons
     increaseScore={props.increaseScore}

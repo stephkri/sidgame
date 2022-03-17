@@ -28,7 +28,7 @@ function App() {
           resetScore={resetScore} />
         </p>
         <p>
-          <Score score={score} />
+          <Score score={score} resetScore={resetScore} />
         </p>
       </header>
     </div>
