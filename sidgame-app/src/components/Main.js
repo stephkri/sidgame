@@ -29,7 +29,7 @@ export default function Main(props) {
     return "Frenchman";
   };
 
-  const checkIfPointAdded = function(selected, generated) {
+  const checkScoreResult = function(selected, generated) {
     return {
       lastName: generated,
       addPoint: selected === generated
@@ -49,6 +49,8 @@ export default function Main(props) {
     resetScore={props.resetScore}
     select={select}
     setSelect={setSelect}
+    result={result}
+    setResult={setResult}
     toggleMode={toggleMode} />}
     </div>)
 };
