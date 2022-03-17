@@ -18,7 +18,7 @@ export default function Main(props) {
 
   const resetBoth = function() {
     setSelect("");
-    setResult("");
+    setResult({});
   }
 
   const generateSid = function() {
