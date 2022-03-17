@@ -10,10 +10,6 @@ function App() {
     setScore(score + 1);
   };
 
-  const decreaseScore = function() {
-    setScore(score - 1);
-  };
-
   const resetScore = function() {
     setScore(0);
   };
