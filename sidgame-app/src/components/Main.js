@@ -28,6 +28,13 @@ export default function Main(props) {
     return "Frenchman";
   };
 
+  const checkIfPointAdded = function(selected, generated) {
+    return {
+      lastName: generated,
+      addPoint: selected === generated
+    }
+  }
+
   return(<div>
     {resultMode ?
     <Result
