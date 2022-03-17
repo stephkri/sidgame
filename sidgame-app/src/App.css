@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #dabb83;
+  background-color: #ebdcc2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,4 +38,12 @@ button {
   border: 2px solid black;
   font-size: 1em;
   margin-top: 10px;
+}
+
+.win-point {
+  color: green;
+}
+
+.lose-point {
+  color: red;
 }
