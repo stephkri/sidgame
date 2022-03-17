@@ -48,6 +48,7 @@ export default function Main(props) {
     decreaseScore={props.decreaseScore}
     resetScore={props.resetScore}
     checkScoreResult={checkScoreResult}
+    generateSid={generateSid}
     select={select}
     setSelect={setSelect}
     result={result}

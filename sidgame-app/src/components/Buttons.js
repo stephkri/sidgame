@@ -2,6 +2,7 @@ export default function Buttons(props) {
   return(<div>
     <button onClick={() => {
       props.setSelect("Hoffman");
+      const score = props.checkScoreResults("Hoffman")
       props.toggleMode();
       }}>Sid Hoffman</button>
     <button onClick={() => {
