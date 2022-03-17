@@ -18,11 +18,5 @@ export default function Buttons(props) {
       console.log(score);
       props.toggleMode()
       }}>Sid Frenchman</button>
-    <br />
-    <button onClick={props.increaseScore}>Increase score</button>
-    <button onClick={props.decreaseScore}>Decrease score</button>
-    <button onClick={props.resetScore}>Reset score</button>
-    <br />
-    <button onClick={props.toggleMode}>Toggle mode</button>
   </div>)
 };
