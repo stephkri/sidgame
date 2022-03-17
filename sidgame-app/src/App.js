@@ -22,9 +22,7 @@ function App() {
     <div className="App">
         <p>
           <Main
-          increaseScore={increaseScore}
-          decreaseScore={decreaseScore}
-          resetScore={resetScore} />
+          increaseScore={increaseScore} />
         </p>
         <p>
           <Score score={score} resetScore={resetScore} />
