@@ -42,11 +42,13 @@ export default function Main(props) {
     result={result} />
     :
     <Buttons
-    increaseScore={props.increaseScore}
-    checkScoreResult={checkScoreResult}
-    generateSid={generateSid}
-    result={result}
-    setResult={setResult}
-    toggleMode={toggleMode} />}
+    // increaseScore={props.increaseScore}
+    // checkScoreResult={checkScoreResult}
+    // generateSid={generateSid}
+    // result={result}
+    // setResult={setResult}
+    // toggleMode={toggleMode}
+    handleClick={handleClick}
+    />}
     </div>);
 };
