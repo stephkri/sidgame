@@ -36,13 +36,6 @@ export default function Main(props) {
   };
 
   return(<div>
-    {resultMode ?
-    <Result
-    toggleMode={toggleMode}
-    result={result} />
-    :
-    <Buttons
-    handleClick={handleClick}
-    />}
+    {resultMode ? <Result toggleMode={toggleMode} result={result} /> : <Buttons handleClick={handleClick} />}
     </div>);
 };
