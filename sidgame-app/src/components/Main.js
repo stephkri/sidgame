@@ -25,6 +25,16 @@ export default function Main(props) {
     }
   };
 
+  const handleClick = function(name) {
+    const score = checkScoreResult(name, generateSid());
+      setResult(score);
+      if (score.addPoint) {
+        props.increaseScore();
+      }
+      console.log(score);
+      toggleMode();
+  };
+
   return(<div>
     {resultMode ?
     <Result
