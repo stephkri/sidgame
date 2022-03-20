@@ -23,20 +23,19 @@ export default function Main(props) {
       lastName: generated,
       addPoint: selected === generated
     }
-  }
+  };
+
+  const handleClick = function(name) {
+    const score = checkScoreResult(name, generateSid());
+      setResult(score);
+      if (score.addPoint) {
+        props.increaseScore();
+      }
+      console.log(score);
+      toggleMode();
+  };
 
   return(<div>
-    {resultMode ?
-    <Result
-    toggleMode={toggleMode}
-    result={result} />
-    :
-    <Buttons
-    increaseScore={props.increaseScore}
-    checkScoreResult={checkScoreResult}
-    generateSid={generateSid}
-    result={result}
-    setResult={setResult}
-    toggleMode={toggleMode} />}
-    </div>)
+    {resultMode ? <Result toggleMode={toggleMode} result={result} /> : <Buttons handleClick={handleClick} />}
+    </div>);
 };
