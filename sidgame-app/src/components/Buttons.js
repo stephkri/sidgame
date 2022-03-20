@@ -12,7 +12,8 @@ export default function Buttons(props) {
 
   return(<div>
     <p>What will I say next?</p>
-    <button className={"sid-button"} onClick={() => {
+    <button className={"sid-button"} onClick={() => { handleClick("Hoffman");
+      /*
       const score = props.checkScoreResult("Hoffman", props.generateSid());
       props.setResult(score);
       if (score.addPoint) {
@@ -20,9 +21,11 @@ export default function Buttons(props) {
       }
       console.log(score); 
       props.toggleMode();
+      */
       }}>Sid Hoffman</button>
     <br />
-    <button className={"sid-button"} onClick={() => {
+    <button className={"sid-button"} onClick={() => { handleClick("Frenchman");
+      /*
       const score = props.checkScoreResult("Frenchman", props.generateSid());
       props.setResult(score);
       if (score.addPoint) {
@@ -30,6 +33,7 @@ export default function Buttons(props) {
       }
       console.log(score);
       props.toggleMode()
+      */
       }}>Sid Frenchman</button>
   </div>)
 };
