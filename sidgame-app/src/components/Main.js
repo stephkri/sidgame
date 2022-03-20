@@ -23,7 +23,7 @@ export default function Main(props) {
       lastName: generated,
       addPoint: selected === generated
     }
-  }
+  };
 
   return(<div>
     {resultMode ?
@@ -38,5 +38,5 @@ export default function Main(props) {
     result={result}
     setResult={setResult}
     toggleMode={toggleMode} />}
-    </div>)
+    </div>);
 };
