@@ -62,6 +62,7 @@ export default function Main(props) {
     }
   };
 
+  // This is the function that gets passed as a prop to the Buttons component.
   // This is where it all comes together:
   const handleClick = function(name) {
     // "score" here is the object returned by checkSoreResult
