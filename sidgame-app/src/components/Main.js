@@ -4,6 +4,14 @@ import Buttons from "./Buttons";
 
 export default function Main(props) {
 
+  /*
+  The Main component is where the logic of the game happens.
+  It has two sub-components only one of which is displayed at a time; the toggleMode function toggles the two.
+  The Buttons component contains the two options: Sid Hoffman, or Sid Frenchman.
+  Once one is selected, the mode goes to the Result component, which displays the randomly generated name
+  and says whether the player has gained a point.
+  */
+
   // "resultMode" simply refers to whether the Main component is showing the Buttons or Result.
   const [resultMode, setResultMode] = useState(false);
   /*
