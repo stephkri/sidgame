@@ -10,6 +10,9 @@ export default function Main(props) {
   The Buttons component contains the two options: Sid Hoffman, or Sid Frenchman.
   Once one is selected, the mode goes to the Result component, which displays the randomly generated name
   and says whether the player has gained a point.
+
+  The logic is stored inside the Main component; that way, everything is in one place,
+  and only a total of three props need to be passed down between the two components.
   */
 
   // "resultMode" simply refers to whether the Main component is showing the Buttons or Result.
