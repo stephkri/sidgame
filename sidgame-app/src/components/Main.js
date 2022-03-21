@@ -27,6 +27,11 @@ export default function Main(props) {
     setResultMode(!resultMode);
   };
 
+  /*
+  This function uses Math.random() to randomly generate a string, containing either "Hoffman" or "Frenchman".
+  Since Math.random() makes a number between 0 and 1, the Math.round function is used to make
+  an even split between the two.
+  */
   const generateSid = function() {
     const rand = Math.random();
     if (Math.round(rand) === 0) {
