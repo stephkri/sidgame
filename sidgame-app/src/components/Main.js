@@ -61,6 +61,7 @@ export default function Main(props) {
   // This is where it all comes together:
   const handleClick = function(name) {
     // "score" here is the object returned by checkSoreResult
+    // This is also where the name is randomly generated
     const score = checkScoreResult(name, generateSid());
       // The "result" state is then set to this object, so it can be displayed in the Result component
       setResult(score);
