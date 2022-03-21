@@ -17,7 +17,7 @@ export default function Main(props) {
 
   // "resultMode" simply refers to whether the Main component is showing the Buttons or Result.
   const [resultMode, setResultMode] = useState(false);
-  
+
   /*
   "result" is made to be shown by the Result component,
   and gets updated whenever the player makes a selection.
@@ -32,7 +32,8 @@ export default function Main(props) {
   };
 
   /*
-  This function uses Math.random() to randomly generate a string, containing either "Hoffman" or "Frenchman".
+  With the help of Math.random(), this function generates a string,
+  containing with random probability either "Hoffman" or "Frenchman".
   Since Math.random() makes a number between 0 and 1, the Math.round function is used to make
   an even split between the two.
   */
