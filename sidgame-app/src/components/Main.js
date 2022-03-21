@@ -14,6 +14,7 @@ export default function Main(props) {
   */
   const [result, setResult] = useState({});
 
+  // This function is a shorthand to switch between Buttons and Result components.
   const toggleMode = function() {
     setResultMode(!resultMode);
   };
