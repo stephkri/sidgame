@@ -3,7 +3,15 @@ import Result from "./Result";
 import Buttons from "./Buttons";
 
 export default function Main(props) {
+
+  // "resultMode" simply refers to whether the Main component is showing the Buttons or Result.
   const [resultMode, setResultMode] = useState(false);
+  /*
+  "result" is made to be shown by the Result component,
+  and gets updated whenever the player makes a selection.
+  The object contains a property saying which name (Hoffman or Frenchman) was selected by the player,
+  as well as a property saying whether or not the player has gained a point.
+  */
   const [result, setResult] = useState({});
 
   const toggleMode = function() {
