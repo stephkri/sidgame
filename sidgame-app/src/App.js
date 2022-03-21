@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Score from './components/Score';
 
 function App() {
+  // This is the game score, which is increased when the player guesses correctly.
   const [score, setScore] = useState(0);
 
   const increaseScore = function() {
