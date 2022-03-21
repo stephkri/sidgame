@@ -65,16 +65,21 @@ export default function Main(props) {
   // This is the function that gets passed as a prop to the Buttons component.
   // This is where it all comes together:
   const handleClick = function(name) {
+
     // "score" here is the object returned by checkSoreResult
     // This is also where the name is randomly generated
     const score = checkScoreResult(name, generateSid());
+
       // The "result" state is then set to this object, so it can be displayed in the Result component
       setResult(score);
+
       // If the two names match, and checkScoreResult determines that the player gets a point...
       if (score.addPoint) {
+
         // then call the increaseScore function, which increases the "score" state by 1
         props.increaseScore();
       }
+      
       // Go to the Result component to see the result of the player's selection
       toggleMode();
   };
