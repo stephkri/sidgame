@@ -66,7 +66,7 @@ export default function Main(props) {
   // This is where it all comes together:
   const handleClick = function(name) {
 
-    // "score" here is the object returned by checkSoreResult
+    // "score" here is the object returned by checkScoreResult
     // This is also where the name is randomly generated
     const score = checkScoreResult(name, generateSid());
 
@@ -79,7 +79,7 @@ export default function Main(props) {
         // then call the increaseScore function, which increases the "score" state by 1
         props.increaseScore();
       }
-      
+
       // Go to the Result component to see the result of the player's selection
       toggleMode();
   };
